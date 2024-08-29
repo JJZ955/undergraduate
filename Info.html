@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人信息</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url("https://img0.baidu.com/it/u=577889361,2377249091&fm=253&fmt=auto&app=120&f=JPEG?w=1422&h=800");
+	    background-size: cover;
+            color: white;
+	    display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+	    flex-direction: column;
+        }
+
+       .navbar {
+	    position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(51, 51, 51, 0.5);
+            height: 64px;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        .navbar a {
+            flex: 1;
+            text-align: center;
+            color: #f2f2f2;
+            text-decoration: none;
+	    font-size: 24px;
+	    line-height: 64px;
+	    display: flex;
+    	    align-items: center;
+	    justify-content: center;
+    	    height: 100%;
+    	    padding: 0;
+        }
+
+        .navbar a:hover {
+            background-color: rgba(221, 221, 221, 0.5);
+            color: black;
+        }
+
+        .container {
+            display: flex;
+            max-width: 1200px;
+            width: 100%;
+            padding: 20px;
+	    background-color: rgba(221, 221, 221, 0.5)
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .left, .right {
+            flex: 1;
+            padding: 20px;
+	    background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 4px;
+        }
+
+        .left {
+            border-right: 2px solid #ddd;
+        }
+
+        h2 {
+            font-size: 36px;
+            margin-top: 10px;
+        }
+
+        p {
+            font-size: 24px;
+            margin: 10px 0;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        li {
+            background-color: rgba(224, 224, 224, 0.2);
+            margin-bottom: 10px;
+            padding: 10px;
+            border-radius: 4px;
+            font-size: 18px;
+        }
+
+        .course-list li {
+            background-color: rgba(224, 224, 224, 0.2);
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+        <a href="Introduction.html">首页</a>
+        <a href="Intrests.html">兴趣爱好</a>
+        <a href="Contact.html">联系方式</a>
+    </div>
+
+    <div class="container">
+        <div class="left">
+            <h2>基本信息</h2>
+            <ul class="course-list">
+                <li><strong>姓名:</strong> 周婧洁</li>
+                <li><strong>性别:</strong> 女</li>
+                <li><strong>学校:</strong> 西北大学</li>
+                <li><strong>学院:</strong> 信息科学与技术学院</li>
+                <li><strong>专业:</strong> 计算机科学与技术</li>
+            </ul>
+        </div>
+
+        <div class="right">
+            <h2>主修课程</h2>
+            <ul class="course-list">
+                <li>面向对象程序设计</li>
+                <li>操作系统</li>
+                <li>数据库系统</li>
+                <li>数据结构</li>
+                <li>软件工程</li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+</html>

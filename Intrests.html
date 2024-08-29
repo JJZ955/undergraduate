@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>兴趣爱好</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url("https://img0.baidu.com/it/u=577889361,2377249091&fm=253&fmt=auto&app=120&f=JPEG?w=1422&h=800");
+	    background-size: cover;
+            color: white;
+	    display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+	    flex-direction: column;
+        }
+
+       .navbar {
+	    position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(51, 51, 51, 0.5);
+            height: 64px;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        .navbar a {
+            flex: 1;
+            text-align: center;
+            color: #f2f2f2;
+            text-decoration: none;
+	    font-size: 24px;
+	    line-height: 64px;
+	    display: flex;
+    	    align-items: center;
+	    justify-content: center;
+    	    height: 100%;
+    	    padding: 0;
+        }
+
+        .navbar a:hover {
+            background-color: rgba(221, 221, 221, 0.5);
+            color: black;
+        }
+
+        .container {
+            display: flex;
+            max-width: 1200px;
+            width: 100%;
+	    min-height: 400px;
+            padding: 20px;
+	    background-color: rgba(221, 221, 221, 0.5)
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	    gap: 20px;
+        }
+
+	.contact-item {
+            flex: 1;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 4px;
+            display: flex;
+	    flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        h2 {
+            font-size: 36px;
+            margin-top: 10px;
+        }
+
+	.image {
+	    height: 200px;
+            width: auto;
+            margin-bottom: 10px;
+	}
+
+        a {
+            font-size: 24px;
+	    color: white;
+	    text-decoration: none;
+            margin: 10px 0;
+        }
+
+	a:hover {
+            color: #ffcc00; 
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+        <a href="Introduction.html">首页</a>
+        <a href="Info.html">个人信息</a>
+        <a href="Contact.html">联系方式</a>
+    </div>
+
+    <div class="container">
+        <div class="contact-item">
+            <h2>音乐</h2>
+	    <img src="https://ss3.baidu.com/-fo3dSag_xI4khGko9WTAnF6hhy/zhidao/pic/item/55e736d12f2eb9389dfb3820d3628535e4dd6f49.jpg" class="image" alt="Music Image">
+            <a href="https://music.163.com/#/song?id=1917549208&market=baiduqk" target="_blank">《Love Story》</a>
+        </div>
+
+        <div class="contact-item">
+            <h2>电影</h2>
+	    <img src="https://img1.baidu.com/it/u=670485593,729000674&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=500" class="image" alt="Film Image">
+            <a href="https://baike.baidu.com/item/%E6%80%A6%E7%84%B6%E5%BF%83%E5%8A%A8/413?fr=ge_ala" target="_blank">《Flipped》</a>
+        </div>
+
+        <div class="contact-item">
+            <h2>旅行</h2>
+	    <img src="https://img1.baidu.com/it/u=1001172942,2669463631&fm=253&fmt=auto&app=138&f=JPEG?w=889&h=500" class="image" alt="Travel Image">
+            <a href="https://zhuanlan.zhihu.com/p/138242702" target="_blank">草原</a>
+        </div>
+    </div>
+
+</body>
+</html>
