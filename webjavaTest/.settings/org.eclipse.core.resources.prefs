@@ -1,0 +1,5 @@
+eclipse.preferences.version=1
+encoding//src/webjavaTest/utils/Base64Util.java=UTF-8
+encoding//src/webjavaTest/utils/FileUtil.java=UTF-8
+encoding//src/webjavaTest/utils/GsonUtils.java=UTF-8
+encoding//src/webjavaTest/utils/HttpUtil.java=UTF-8

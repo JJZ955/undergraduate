@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+	<script type="text/javascript">
+		function reg(){
+			
+			var username=document.getElementById("username").value;
+			var imageSrc=document.getElementById("imageSrc").value;
+			$.ajax({
+				type:"POST",//提交方式
+				url:"RegServlet",//服务器地址
+				data:{
+					userName:username,
+					imageBase64:imageSrc
+				}
+			    
+			})
+			
+		}
+	</script>
+</head>
+<body>
+	<!-- 表单：向服务器或其他页面传输数据
+		 submit:name值 = inputvalue
+		 提交给action的值 -->
+	<form action="RegServlet" method="post">
+		用户名：<input type="text" id="username" name="userName"><br>
+		密码：<input type="password" id="pwd" name="userPwd"><br>
+		
+		<input type="button" value="注册" onclick="reg()">
+		
+	</form>
+	
+</body>
+</html>
